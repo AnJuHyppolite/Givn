@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChatEngine, CreateChat } from "react-chat-engine";
+import { ChatEngine, getOrCreateChat } from "react-chat-engine";
 import { useAuth } from "../Providers/UserProvider";
 import "../Styles/Chat.css"
 
@@ -38,12 +38,12 @@ const Chat = () => {
       <div className="chat-page">
         <ChatEngine
           height="calc(1000vh-100px)"
-          // projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
-          // userName={newUserData}
-          // userSecret={newUserUid}
-          projectID="17fbc9ac-063f-48b0-a912-078d00ccbead"
-          userName="poetessanju@gmail.com"
-          userSecret="abvynxWd5AQcj9OayqVYjXJ7YvO2"
+          projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
+          userName={newUserData}
+          userSecret={newUserUid}
+          // projectID="3ab70b99-6189-45b7-954f-455bb9e8b3d8"
+          // userName="poetessanju@gmail.com"
+          // userSecret="abvynxWd5AQcj9OayqVYjXJ7YvO2"
           renderNewChatForm={(creds) => renderChatForm(creds)}
         />
       </div>

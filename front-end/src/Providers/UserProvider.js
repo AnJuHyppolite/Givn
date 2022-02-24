@@ -102,6 +102,10 @@ const UserProvider = (props) => {
               "project-id": process.env.REACT_APP_CHAT_ENGINE_ID,
               "user-name": newUserData,
               "user-secret": newUserUid,
+              // "project-id": "3ab70b99-6189-45b7-954f-455bb9e8b3d8",
+              // "user-name": newUserData,
+              // "user-secret": newUserUid,
+
             },
           })
           .then(() => {
